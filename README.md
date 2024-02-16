@@ -5,21 +5,21 @@
 
 My Search, to understand the series of practices related to typical scenarios in a work environment with K8s. My purpose is to understand at a medium level the practical forms (codes and procedures) standardized for the following topics in K8s:
 
-1.  [Installing]()
-2.  [Configuration]()
-3.  [Architecture]()
-4.  [APIs]()
-5.  [States]()
-6.  [Storage]()
-7.  [Services]()
-8.  [Deployments]()
-9.  [Ingress]()
-10. [Scheduling]()
-11. [Logging]()
-12. [Troubleshooting]()
-13. [Objects and Operators]()
-14. [Security]()
-15. [HAProxy]()
+1.  [Installing](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Installing)
+2.  [Configuration](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Configuration)
+3.  [Architecture](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Architecture)
+4.  [APIs](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/APIs)
+5.  [States](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/States)
+6.  [Storage](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Storage)
+7.  [Services](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Services)
+8.  [Deployments](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Deployments)
+9.  [Ingress](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Ingress)
+10. [Scheduling](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Scheduling)
+11. [Logging](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Logging)
+12. [Troubleshooting](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Troubleshooting)
+13. [Objects and Operators](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Objects_and_Operators)
+14. [Security](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Security)
+15. [HAProxy](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/HAProxy)
 
 <div align="center">
     <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemMwNXM1djc3anVrNHZoamJ6cGFpdHgwdWI3bnB6cXR3MXI1bGNtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26zyYdiV4pdZZUWEU/giphy.gif">
