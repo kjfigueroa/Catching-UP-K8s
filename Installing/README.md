@@ -30,6 +30,63 @@ Pretendo que mi cluster disponga de las siguientes maquinas:
 
 For better usability of the machines in VirtualBox, I keep in mind to take a :camera: "*snapshoot*" for each time I try to make a successful progress, to return to the practice again and repeat it until I understand its process.
 
+## 1. Installing and Config Containerd
+
+```sh
+master@k8s-control-plane:~$ sudo bash install-containerd.sh 
+
+ Message! 
+The default behavior of a kubelet was to fail to start if swap memory was detected on a node.
+Is neccesary disable swap to continue...
+
+Press enter to continue
+
+ Message! 
+Up to this point, the modules variables br_netfilter, and overlay modules have been loaded
+Showing previously configured modules:
+
+br_netfilter           32768  0
+bridge                307200  1 br_netfilter
+overlay               151552  0
+
+Press enter to continue
+
+ Message! 
+Up to this point, the following system variables have been configured
+Showing previously configured system variables:
+
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+
+Press enter to continue
+ Message! 
+Containerd should be ready, showing the current status!
+
+● containerd.service - containerd container runtime
+     Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2024-02-18 06:08:51 UTC; 2s ago
+       Docs: https://containerd.io
+    Process: 3850 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)
+   Main PID: 3851 (containerd)
+      Tasks: 10
+     Memory: 13.0M
+        CPU: 132ms
+     CGroup: /system.slice/containerd.service
+             └─3851 /usr/bin/containerd
+
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.749567761Z" level=info msg="Start subscribing containerd event"   
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.750070558Z" level=info msg="Start recovering state"
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.750207614Z" level=info msg="Start event monitor"
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.750337617Z" level=info msg=serving... address=/run/containerd/con>
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.750520577Z" level=info msg=serving... address=/run/containerd/con>
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.751726738Z" level=info msg="Start snapshots syncer"
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.751881443Z" level=info msg="Start cni network conf syncer for def>
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.751896881Z" level=info msg="Start streaming server"
+Feb 18 06:08:51 k8s-control-plane systemd[1]: Started containerd container runtime.
+Feb 18 06:08:51 k8s-control-plane containerd[3851]: time="2024-02-18T06:08:51.752196171Z" level=info msg="containerd successfully booted in 0.0>
+lines 1-22/22 (END)
+```
 
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/kjfigueroa/
