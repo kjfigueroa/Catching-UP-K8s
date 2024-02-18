@@ -1,4 +1,4 @@
-[![LinkedIn][linkedin-shield]][linkedin-url] [![kubernetes-doc][kubernetes-s]][linkedin-url] ![KEVIN]
+[![LinkedIn][linkedin-shield]][linkedin-url] ![kubernetes-doc][kubernetes-s] ![KEVIN]
 
 
 # Catching Up on K8s
@@ -20,6 +20,8 @@ My Search, to understand the series of practices related to typical scenarios in
 13. [Objects and Operators](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Objects_and_Operators)
 14. [Security](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Security)
 15. [HAProxy](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/HAProxy)
+
+"This repository is intended to be a log of the progress of my Kubernetes self-training."
 
 <div align="center">
     <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemMwNXM1djc3anVrNHZoamJ6cGFpdHgwdWI3bnB6cXR3MXI1bGNtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26zyYdiV4pdZZUWEU/giphy.gif">
