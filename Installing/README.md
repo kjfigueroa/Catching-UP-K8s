@@ -8,30 +8,27 @@
 
 Given the indicated reference, Kubeadm is the "fast paths" for creating Kubernetes clusters, and has the minimum of features to meet this end, therefore the only thing I expect from this part of my development is getting the higher level tools and using kubeadm as the foundation of all deployments will make it easier to create compliant clusters.
 
-### Environment
+## Installing and Config Containerd
 
-Since this project is only with the intention of training my skills, I have opted only for the use of a small home network in VirtualBox, of course, according to the same provider documentation ([Install and Set Up kubeadm on Linux](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)), It is not indicated exactly which platform should be worked on, so in an agnostic manner that the technology can be installed in the same way in **VirtualBox**, **GCP**, **AWS**, **Azure**, etc...
+In general, the following criteria must be met (check the [raw commands page](https://github.com/kjfigueroa/Catching-UP-K8s/tree/main/Installing/raw-install-containerd.txt)):
 
-Pretendo que mi cluster disponga de las siguientes maquinas: 
+1. Disable SWAP Memory: Swap configuration. The default behavior of a kubelet was to fail to start if swap memory was detected on a node. `$ sudo swapoff -a`
 
-* Control-Plane:
+2. Forwarding IPv4 and letting iptables see bridged traffic. On `/etc/modules-load.d` make the k8s configuration for `overlay`, `br_netfilter` modules.
 
-        Operating System: Ubuntu (64-bit)
-        Base Memory: 4096 MB
-        Processors: 3
-        SATA Port 0: Control-Plane.vdi (Normal, 25.00 GB)
+3. sysctl params required by setup, and apply `sysctl` params without reboot
 
-* Worker 1 (bis): 
+4. Install daemon Containerd.
 
-        Operating System: Ubuntu (64-bit)
-        Base Memory: 2048 MB
-        Processors: 1
-        SATA Port 0: Control-Plane.vdi (Normal, 10.00 GB)
+5. Update the apt package index and install packages needed to use the containerd apt repository.
 
-For better usability of the machines in VirtualBox, I keep in mind to take a :camera: "*snapshoot*" for each time I try to make a successful progress, to return to the practice again and repeat it until I understand its process.
+6. Add the **docker** repository to Apt sources.
 
-## 1. Installing and Config Containerd
+7. Install the containerd software.
 
+8. Restart and check the status of containerd.
+
+#### Script output
 ```sh
 master@k8s-control-plane:~$ sudo bash install-containerd.sh 
 
