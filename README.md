@@ -27,7 +27,9 @@ My Search, to understand the series of practices related to typical scenarios in
 
 Since this project is only with the intention of training my skills, I have opted only for the use of a small home network in VirtualBox, of course, according to the same provider documentation ([Install and Set Up kubeadm on Linux](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)), It is not indicated exactly which platform should be worked on, so in an agnostic manner that the technology can be installed in the same way in **VirtualBox**, **GCP**, **AWS**, **Azure**, etc...
 
-Pretendo que mi cluster disponga de las siguientes maquinas: 
+For better usability of the machines in VirtualBox, I keep in mind to take a :camera: "*snapshoot*" for each time I try to make a successful progress, to return to the practice again and repeat it until I understand its process.
+
+My cluster should work with the following virtual machines, carefully following the suggested network and cgroup configurations:
 
 * Control-Plane:
 
@@ -36,14 +38,13 @@ Pretendo que mi cluster disponga de las siguientes maquinas:
         Processors: 3
         SATA Port 0: Control-Plane.vdi (Normal, 25.00 GB)
 
-* Worker 1 (bis): 
+* Workers nodes: 
 
         Operating System: Ubuntu (64-bit)
         Base Memory: 2048 MB
         Processors: 1
-        SATA Port 0: Control-Plane.vdi (Normal, 10.00 GB)
+        SATA Port 0: k-node-1.vdi (Normal, 10.00 GB)
 
-For better usability of the machines in VirtualBox, I keep in mind to take a :camera: "*snapshoot*" for each time I try to make a successful progress, to return to the practice again and repeat it until I understand its process.
 
 <div align="center">
     <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemMwNXM1djc3anVrNHZoamJ6cGFpdHgwdWI3bnB6cXR3MXI1bGNtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26zyYdiV4pdZZUWEU/giphy.gif">
