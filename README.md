@@ -3,6 +3,9 @@
 
 # Catching Up on K8s
 
+>[!IMPORTANT]
+> :construction: Under Construction :construction:
+
 This repository is intended to be a log of the progress of my Kubernetes self-training.
 
 My Search, to understand the series of practices related to typical scenarios in a work environment with K8s. My purpose is to understand at a medium level the practical forms (codes and procedures) standardized for the following topics in K8s:
